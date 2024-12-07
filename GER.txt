@@ -1,0 +1,2484 @@
+focus_tree = {
+	id = germany
+	#continuous_focus_position = { x = 38910 y = 1960 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+
+	#A New Horizon?
+	focus = {
+		id = GER_anewhorizon
+		icon = GFX_focus_attack_germany
+		x = 65
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#March into the Rhineland
+	focus = {
+		id = GER_march_into_the_rhineland
+		icon = GFX_GER_march_into_the_rhineland-613157
+		x = 65
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_anewhorizon  }
+	}
+
+	#Führertreu
+	focus = {
+		id = GER_fuhrertreu
+		icon = GFX_GER_fuhrertreu-574635
+		x = 65
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_march_into_the_rhineland  }
+	}
+
+	#The Dönitz Goverment
+	focus = {
+		id = GER_thedonitzgoverment
+		icon = GFX_goal_unknown
+		x = 12
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_march_into_the_rhineland  }
+	}
+
+	#End the Versallies Obstacle!
+	focus = {
+		id = GER_endtheversalliesobsticle
+		icon = GFX_GER_endtheversalliesobsticle-614957
+		x = 65
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_fuhrertreu  }
+	}
+
+	#Vote for Adolf Hitler!
+	focus = {
+		id = GER_voteforadolfhitler
+		icon = GFX_goal_unknown
+		x = 67
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_fuhrertreu  }
+	}
+
+	#Bring Light Before the Dark
+	focus = {
+		id = GER_bring_light_before_the_dark
+		icon = GFX_goal_unknown
+		x = 65
+		y = 5
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_endtheversalliesobsticle  }
+	}
+
+	#United under one banner
+	focus = {
+		id = GER_united_under_one_banner
+		icon = GFX_goal_unknown
+		x = 65
+		y = 6
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_bring_light_before_the_dark  }
+	}
+
+	#One Thousand Year Reich
+	focus = {
+		id = GER_one_thousand_year_reich
+		icon = GFX_goal_unknown
+		x = 65
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_united_under_one_banner  }
+	}
+
+	#Support the DAP
+	focus = {
+		id = GER_support_the_dap
+		icon = GFX_goal_unknown
+		x = 64
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_one_thousand_year_reich  }
+		mutually_exclusive = { focus = GER_coup_in_vienna  }
+	}
+
+	#Coup in Vienna
+	focus = {
+		id = GER_coup_in_vienna
+		icon = GFX_goal_unknown
+		x = 66
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_one_thousand_year_reich  }
+		mutually_exclusive = { focus = GER_support_the_dap  }
+	}
+
+	#Hitler Youth
+	focus = {
+		id = GER_hitler_youth
+		icon = GFX_goal_unknown
+		x = 69
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_one_thousand_year_reich  }
+	}
+
+	#Expand the Jugend
+	focus = {
+		id = GER_expand_the_jugend
+		icon = GFX_goal_unknown
+		x = 69
+		y = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_hitler_youth  }
+	}
+
+	#Expansion of the BDM
+	focus = {
+		id = GER_expansion_of_the_bdm
+		icon = GFX_goal_unknown
+		x = 71
+		y = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_hitler_youth  }
+	}
+
+	#Tackle the Polish Problem
+	focus = {
+		id = GER_tackle_the_polish_problem
+		icon = GFX_goal_unknown
+		x = 64
+		y = 14
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_spreading_nazism  }
+	}
+
+	#Echoes from the Reichstag
+	focus = {
+		id = GER_echoes_from_the_reichstag
+		icon = GFX_goal_unknown
+		x = 61
+		y = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_spreading_nazism  }
+	}
+
+	#Embrace the Fuhrer
+	focus = {
+		id = GER_embrace_the_fuhrer
+		icon = GFX_goal_unknown
+		x = 68
+		y = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_spreading_nazism  }
+	}
+
+	#Contact Konrad Henlein
+	focus = {
+		id = GER_contact_konrad_henlein
+		icon = GFX_goal_unknown
+		x = 66
+		y = 14
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_spreading_nazism  }
+	}
+
+	#Demand the Sudetenland
+	focus = {
+		id = GER_demand_the_sudetenland1
+		icon = GFX_goal_unknown
+		x = 66
+		y = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_contact_konrad_henlein  }
+	}
+
+	#Support the NSDAP in Danzig
+	focus = {
+		id = GER_support_the_nsdap_in_danzig
+		icon = GFX_goal_unknown
+		x = 64
+		y = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_tackle_the_polish_problem  }
+	}
+
+	#First Vienna Award
+	focus = {
+		id = GER_first_vienna_award1
+		icon = GFX_goal_unknown
+		x = 65
+		y = 16
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_demand_the_sudetenland1  } prerequisite = { focus = GER_support_the_nsdap_in_danzig  }
+	}
+
+	#Invasion of Czechoslovakia
+	focus = {
+		id = GER_invasion_of_czechoslovakia
+		icon = GFX_goal_unknown
+		x = 66
+		y = 17
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_first_vienna_award1  }
+	}
+
+	#Ribbentrop Ultimatum
+	focus = {
+		id = GER_ribbentrop_ultimatum
+		icon = GFX_goal_unknown
+		x = 64
+		y = 17
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_first_vienna_award1  }
+	}
+
+	#Danzig Ist Deutsch!
+	focus = {
+		id = GER_danzigistdeutsch
+		icon = GFX_goal_unknown
+		x = 62
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_ribbentrop_ultimatum  }
+	}
+
+	#Fall Weiss Success!
+	focus = {
+		id = GER_fallweisssuccess
+		icon = GFX_goal_unknown
+		x = 61
+		y = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_danzigistdeutsch  }
+		mutually_exclusive = { focus = GER_thedefensivewarcontinues }
+	}
+
+	#The Defensive War Continues...
+	focus = {
+		id = GER_thedefensivewarcontinues
+		icon = GFX_goal_unknown
+		x = 63
+		y = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_danzigistdeutsch  }
+		mutually_exclusive = { focus = GER_fallweisssuccess  }
+	}
+
+	#Protectorate of Bohemia and Moravia
+	focus = {
+		id = GER_protectorate_of_bohemia_and_moravia
+		icon = GFX_goal_unknown
+		x = 65
+		y = 18
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_invasion_of_czechoslovakia  }
+		mutually_exclusive = { focus = GER_revive_the_nof  }
+	}
+
+	#Revive the NOF
+	focus = {
+		id = GER_revive_the_nof
+		icon = GFX_goal_unknown
+		x = 67
+		y = 18
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_invasion_of_czechoslovakia  }
+		mutually_exclusive = { focus = GER_protectorate_of_bohemia_and_moravia }
+	}
+
+	#Czech-Werke
+	focus = {
+		id = GER_czechwerke
+		icon = GFX_goal_unknown
+		x = 65
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_protectorate_of_bohemia_and_moravia  }
+	}
+
+	#Seize Czech Industries
+	focus = {
+		id = GER_seize_czech_industries
+		icon = GFX_goal_unknown
+		x = 66
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_revive_the_nof  }
+	}
+
+	#Second Vienna Award
+	focus = {
+		id = GER_second_vienna_award1
+		icon = GFX_goal_unknown
+		x = 65
+		y = 22
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_czechwerke  } prerequisite = { focus = GER_revive_the_nof  }
+	}
+
+	#The Northern Gambit
+	focus = {
+		id = GER_the_northern_gambit
+		icon = GFX_goal_unknown
+		x = 58
+		y = 16
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_spreading_nazism  }
+	}
+
+	#Surprise Landing Tactics
+	focus = {
+		id = GER_surprise_landing_tactics
+		icon = GFX_goal_unknown
+		x = 57
+		y = 17
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_northern_gambit  }
+		mutually_exclusive = { focus = GER_trailthefallshrimjagers }
+	}
+
+	#Trail the Fallshrimjager's
+	focus = {
+		id = GER_trailthefallshrimjagers
+		icon = GFX_goal_unknown
+		x = 59
+		y = 17
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_northern_gambit  }
+		mutually_exclusive = { focus = GER_surprise_landing_tactics  }
+	}
+
+	#Intensify Swedish Ore Deliveries
+	focus = {
+		id = GER_intensify_swedish_ore_deliveries
+		icon = GFX_goal_unknown
+		x = 55
+		y = 17
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_the_northern_gambit  }
+	}
+
+	#Swedish Transit Agreement
+	focus = {
+		id = GER_swedish_transit_agreement
+		icon = GFX_goal_unknown
+		x = 55
+		y = 18
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_intensify_swedish_ore_deliveries  }
+	}
+
+	#Operation Weserübung
+	focus = {
+		id = GER_operationweserubung
+		icon = GFX_goal_unknown
+		x = 58
+		y = 18
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_surprise_landing_tactics  } prerequisite = { focus = GER_trailthefallshrimjagers  }
+	}
+
+	#Operation Ikarus
+	focus = {
+		id = GER_operation_ikarus
+		icon = GFX_goal_unknown
+		x = 56
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_surprise_landing_tactics  focus = GER_trailthefallshrimjagers  }
+	}
+
+	#Eisbauer Naval Bases
+	focus = {
+		id = GER_eisbauer_naval_bases
+		icon = GFX_goal_unknown
+		x = 55
+		y = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_operation_ikarus  }
+	}
+
+	#Quisling's regime
+	focus = {
+		id = GER_quislingsregime
+		icon = GFX_goal_unknown
+		x = 58
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_operationweserubung  }
+	}
+
+	#Norwegian Heavy Water Development
+	focus = {
+		id = GER_norwegian_heavy_water_development
+		icon = GFX_goal_unknown
+		x = 60
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_operationweserubung  }
+	}
+
+	#Towards the Benalux
+	focus = {
+		id = GER_towards_the_benalux
+		icon = GFX_goal_unknown
+		x = 71
+		y = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_spreading_nazism  }
+	}
+
+	#A New Chief Admiral
+	focus = {
+		id = GER_a_new_chief_admiral
+		icon = GFX_goal_unknown
+		x = 10
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_thedonitzgoverment }
+		mutually_exclusive = { focus = GER_wolf_of_the_sea }
+	}
+
+	#Enigma Project
+	focus = {
+		id = GER_enigma_project
+		icon = GFX_goal_unknown
+		x = 16
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_a_new_chief_admiral  }
+	}
+
+	#Wolf Of The Sea
+	focus = {
+		id = GER_wolf_of_the_sea
+		icon = GFX_goal_unknown
+		x = 14
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_thedonitzgoverment  }
+		mutually_exclusive = { focus = GER_a_new_chief_admiral  }
+	}
+
+	#The Grand 'Kriegsmarine'
+	focus = {
+		id = GER_thegrandkriegsmarine
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = GER_wolf_of_the_sea  } prerequisite = { focus = GER_a_new_chief_admiral  }
+	}
+
+	#Uranprojekt expansion
+	focus = {
+		id = GER_uranprojekt_expansion
+		icon = GFX_goal_unknown
+		x = 60
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GER_norwegian_heavy_water_development  }
+	}
+
+	#A World Tour!
+	focus = {
+		id = GER_aworldtour
+		icon = GFX_goal_unknown
+		x = 21
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = GER_a_new_chief_admiral  }
+	}
+
+	#Scuttle the Norwegian Fleet
+	focus = {
+		id = GER_scuttle_the_norwegian_fleet
+		icon = GFX_goal_unknown
+		x = 59
+		y = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_quislingsregime  }
+		mutually_exclusive = { focus = GER_rijksmarine }
+	}
+
+	#Rijksmårine
+	focus = {
+		id = GER_rijksmarine
+		icon = GFX_goal_unknown
+		x = 57
+		y = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_quislingsregime  }
+		mutually_exclusive = { focus = GER_scuttle_the_norwegian_fleet  }
+	}
+
+	#Fall Gelb
+	focus = {
+		id = GER_fall_gelb
+		icon = GFX_goal_unknown
+		x = 70
+		y = 16
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_towards_the_benalux  }
+		mutually_exclusive = { focus = GER_fall_stahl }
+	}
+
+	#Paris is ours!
+	focus = {
+		id = GER_parisisours
+		icon = GFX_goal_unknown
+		x = 71
+		y = 17
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_fall_gelb  } prerequisite = { focus = GER_fall_stahl  }
+	}
+
+	#Re-Integrate Elsaß-Lothringen
+	focus = {
+		id = GER_reintegrateelsasslothringen
+		icon = GFX_goal_unknown
+		x = 69
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_parisisours  }
+	}
+
+	#The Pétain Administration
+	focus = {
+		id = GER_thepetainadministration
+		icon = GFX_goal_unknown
+		x = 72
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_parisisours  }
+	}
+
+	#Travail, familie, patrie!
+	focus = {
+		id = GER_travailfamiliepatrie
+		icon = GFX_goal_unknown
+		x = 72
+		y = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_thepetainadministration  }
+	}
+
+	#French Recruitment drive
+	focus = {
+		id = GER_french_recruitment_drive
+		icon = GFX_goal_unknown
+		x = 70
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_travailfamiliepatrie  }
+	}
+
+	#Reorganize French Production
+	focus = {
+		id = GER_reorganize_french_production
+		icon = GFX_goal_unknown
+		x = 72
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_travailfamiliepatrie  }
+	}
+
+	#Put good use into Renault
+	focus = {
+		id = GER_put_good_use_into_renault
+		icon = GFX_goal_unknown
+		x = 71
+		y = 22
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_reorganize_french_production  }
+		mutually_exclusive = { focus = GER_utilize_french_labourers }
+	}
+
+	#Utilize French Labourers
+	focus = {
+		id = GER_utilize_french_labourers
+		icon = GFX_goal_unknown
+		x = 73
+		y = 22
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_reorganize_french_production  }
+		mutually_exclusive = { focus = GER_put_good_use_into_renault  }
+	}
+
+	#Nacht und Nebel
+	focus = {
+		id = GER_nacht_und_nebel
+		icon = GFX_goal_unknown
+		x = 74
+		y = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_parisisours  }
+	}
+
+	#Avenge Versallies
+	focus = {
+		id = GER_avenge_versallies
+		icon = GFX_goal_unknown
+		x = 76
+		y = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_city_romance  } prerequisite = { focus = GER_plunder_the_french  }
+	}
+
+	#Occupied by Germany
+	focus = {
+		id = GER_occupied_by_germany
+		icon = GFX_goal_unknown
+		x = 76
+		y = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_avenge_versallies  }
+	}
+
+	#Equipment shortages
+	focus = {
+		id = GER_equipment_shortages
+		icon = GFX_goal_unknown
+		x = 75
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_occupied_by_germany  }
+	}
+
+	#Final relief
+	focus = {
+		id = GER_final_relief
+		icon = GFX_goal_unknown
+		x = 75
+		y = 22
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_equipment_shortages  }
+	}
+
+	#New airbases
+	focus = {
+		id = GER_new_airbases
+		icon = GFX_goal_unknown
+		x = 77
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_occupied_by_germany  }
+	}
+
+	#Todt Batteries
+	focus = {
+		id = GER_todt_batteries
+		icon = GFX_goal_unknown
+		x = 79
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_occupied_by_germany  }
+	}
+
+	#The Berghof Conference
+	focus = {
+		id = GER_the_berghof_conference
+		icon = GFX_goal_unknown
+		x = 65
+		y = 23
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_second_vienna_award1  } prerequisite = { focus = GER_improved_national_spirit  } prerequisite = { focus = GER_anendtothegermanpolishproblem  }
+	}
+
+	#Ostfeldzug successful
+	focus = {
+		id = GER_ostfeldzug_successful
+		icon = GFX_goal_unknown
+		x = 63
+		y = 30
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_wehaveonlytokickinthedoorandthewholerottenstructurewillcomecrashingdown  }
+		mutually_exclusive = { focus = GER_preparethewinteruniforms }
+	}
+
+	#Prepare the winter uniforms..
+	focus = {
+		id = GER_preparethewinteruniforms
+		icon = GFX_goal_unknown
+		x = 67
+		y = 30
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_wehaveonlytokickinthedoorandthewholerottenstructurewillcomecrashingdown  }
+		mutually_exclusive = { focus = GER_ostfeldzug_successful  }
+	}
+
+	#Operation Marita
+	focus = {
+		id = GER_operation_marita
+		icon = GFX_goal_unknown
+		x = 64
+		y = 24
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_berghof_conference  }
+		mutually_exclusive = { focus = GER_southern_retreat }
+	}
+
+	#Operation 25
+	focus = {
+		id = GER_operation_25
+		icon = GFX_goal_unknown
+		x = 66
+		y = 24
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_berghof_conference  }
+		mutually_exclusive = { focus = GER_demand_slovenia1 }
+	}
+
+	#A Southern Fortress
+	focus = {
+		id = GER_a_southern_fortress
+		icon = GFX_goal_unknown
+		x = 61
+		y = 25
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_southern_retreat  }
+	}
+
+	#Compromise King Paul
+	focus = {
+		id = GER_compromise_king_paul
+		icon = GFX_goal_unknown
+		x = 70
+		y = 26
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_firstljubljanaaccord1  }
+	}
+
+	#Southern Retreat
+	focus = {
+		id = GER_southern_retreat
+		icon = GFX_goal_unknown
+		x = 62
+		y = 24
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_berghof_conference  }
+		mutually_exclusive = { focus = GER_operation_marita  }
+	}
+
+	#Demand Slovenia
+	focus = {
+		id = GER_demand_slovenia1
+		icon = GFX_goal_unknown
+		x = 68
+		y = 24
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_berghof_conference  }
+		mutually_exclusive = { focus = GER_operation_25  }
+	}
+
+	#First ljubljana  accord
+	focus = {
+		id = GER_firstljubljanaaccord1
+		icon = GFX_goal_unknown
+		x = 69
+		y = 25
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_demand_slovenia1  }
+	}
+
+	#An end, to the German-Polish Problem
+	focus = {
+		id = GER_anendtothegermanpolishproblem
+		icon = GFX_goal_unknown
+		x = 63
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_fallweisssuccess  } prerequisite = { focus = GER_thedefensivewarcontinues  }
+	}
+
+	#Improved National Spirit
+	focus = {
+		id = GER_improved_national_spirit
+		icon = GFX_goal_unknown
+		x = 67
+		y = 21
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_reintegrateelsasslothringen  }
+	}
+
+	#"We have only to kick in the door, and the whole rotten structure will come crashing down."
+	focus = {
+		id = GER_wehaveonlytokickinthedoorandthewholerottenstructurewillcomecrashingdown
+		icon = GFX_goal_unknown
+		x = 65
+		y = 29
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_unternehmen_barbarossa  }
+	}
+
+	#Distrust in Mussolini
+	focus = {
+		id = GER_distrust_in_mussolini
+		icon = GFX_goal_unknown
+		x = 60
+		y = 26
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_a_southern_fortress  }
+	}
+
+	#Turning to the East
+	focus = {
+		id = GER_turning_to_the_east
+		icon = GFX_goal_unknown
+		x = 65
+		y = 25
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_berghof_conference  }
+	}
+
+	#Expand Brandenburgers
+	focus = {
+		id = GER_expand_brandenburgers
+		icon = GFX_goal_unknown
+		x = 62
+		y = 26
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_turning_to_the_east  }
+	}
+
+	#Meticulous logistics planning
+	focus = {
+		id = GER_meticulous_logistics_planning
+		icon = GFX_goal_unknown
+		x = 64
+		y = 26
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_turning_to_the_east  }
+	}
+
+	#New Army Groups
+	focus = {
+		id = GER_new_army_groups
+		icon = GFX_goal_unknown
+		x = 65
+		y = 27
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_turning_to_the_east  }
+	}
+
+	#Secret Reconnaissance
+	focus = {
+		id = GER_secret_reconnaissance
+		icon = GFX_goal_unknown
+		x = 66
+		y = 26
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_turning_to_the_east  }
+	}
+
+	#Kreigsmarine Reorganization
+	focus = {
+		id = GER_kreigsmarine_reorganization
+		icon = GFX_goal_unknown
+		x = 63
+		y = 27
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_turning_to_the_east  }
+	}
+
+	#Redirect Luftwaffe Priotity
+	focus = {
+		id = GER_redirect_luftwaffe_priotity
+		icon = GFX_goal_unknown
+		x = 67
+		y = 27
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_turning_to_the_east  }
+	}
+
+	#Consolidate Our Allies
+	focus = {
+		id = GER_consolidate_our_allies
+		icon = GFX_goal_unknown
+		x = 68
+		y = 26
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_turning_to_the_east  }
+	}
+
+	#Unternehmen Barbarossa
+	focus = {
+		id = GER_unternehmen_barbarossa
+		icon = GFX_goal_unknown
+		x = 65
+		y = 28
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_new_army_groups  } prerequisite = { focus = GER_redirect_luftwaffe_priotity  } prerequisite = { focus = GER_kreigsmarine_reorganization  }
+	}
+
+	#City Romance
+	focus = {
+		id = GER_city_romance
+		icon = GFX_goal_unknown
+		x = 77
+		y = 18
+                cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_parisisours  }
+                ai_will_do = { factor = 10 }
+		mutually_exclusive = { focus = GER_plunder_the_french  }
+                
+               	completion_reward = {
+                 add_stability = 0.1
+          }
+
+	}
+
+	#Fall Stahl
+	focus = {
+		id = GER_fall_stahl
+		icon = GFX_goal_unknown
+		x = 72
+		y = 16
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_towards_the_benalux  }
+		mutually_exclusive = { focus = GER_fall_gelb  }
+	}
+
+	#Plunder the French
+	focus = {
+		id = GER_plunder_the_french
+		icon = GFX_goal_unknown
+		x = 75
+		y = 18
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_parisisours  }
+		mutually_exclusive = { focus = GER_city_romance }
+	}
+
+	#Expand the Volkswagen
+	focus = {
+		id = GER_expand_the_volkswagen
+		icon = GFX_goal_unknown
+		x = 61
+		y = 9
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_one_thousand_year_reich  }
+	}
+
+	#Revise the Heereswaffenamt
+	focus = {
+		id = GER_revise_the_heereswaffenamt
+		icon = GFX_goal_unknown
+		x = 60
+		y = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_expand_the_volkswagen  }
+	}
+
+	#Deals with Civilian Industries
+	focus = {
+		id = GER_deals_with_civilian_industries
+		icon = GFX_goal_unknown
+		x = 61
+		y = 11
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_expand_the_volkswagen  }
+	}
+
+	#Fuel Autarky
+	focus = {
+		id = GER_fuel_autarky
+		icon = GFX_goal_unknown
+		x = 60
+		y = 12
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_deals_with_civilian_industries  }
+		mutually_exclusive = { focus = GER_increased_petroleum_imports  }
+	}
+
+	#Increased Petroleum Imports
+	focus = {
+		id = GER_increased_petroleum_imports
+		icon = GFX_goal_unknown
+		x = 62
+		y = 12
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_deals_with_civilian_industries  }
+		mutually_exclusive = { focus = GER_fuel_autarky  }
+	}
+
+	#Anschluss
+	focus = {
+		id =  GER_anschluss1
+		icon = GFX_goal_unknown
+		x = 65
+		y = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_coup_in_vienna  } prerequisite = { focus = GER_support_the_dap  }
+	}
+
+	#Lebensraum
+	focus = {
+		id = GER_lebensraum
+		icon = GFX_goal_unknown
+		x = 65
+		y = 12
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_anschluss1  }
+	}
+
+    #Spreading Nazism
+	focus = {
+		id = GER_spreading_nazism
+		icon = GFX_goal_unknown
+		x = 65
+		y = 13
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_lebensraum  }
+	}
+	
+	#8th Party Congress
+	focus = {
+		id = GER_8th_party_congress
+		icon = GFX_goal_unknown
+		x = 62
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_one_thousand_year_reich  }
+	}
+
+    #The Moskau Exhibition
+	focus = {
+		id = GER_the_moskau_exhibition
+		icon = GFX_goal_unknown
+		x = 59
+		y = 31
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_ostfeldzug_successful  }
+	}
+
+	#"Russland, as it lives and fights"
+	focus = {
+		id = GER_russlandasitlivesandfights
+		icon = GFX_goal_unknown
+		x = 61
+		y = 31
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_ostfeldzug_successful  }
+	}
+
+	#"Drang Nach Osten!"
+	focus = {
+		id = GER_drangnachosten
+		icon = GFX_goal_unknown
+		x = 63
+		y = 31
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_ostfeldzug_successful  }
+	}
+
+	#Winter Defensive Operations
+	focus = {
+		id = GER_winter_defensive_operations
+		icon = GFX_goal_unknown
+		x = 65
+		y = 31
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_preparethewinteruniforms  } prerequisite = { focus = GER_ostfeldzug_successful  }
+	}
+
+	#Lacking Key Resources
+	focus = {
+		id = GER_lacking_key_resources
+		icon = GFX_goal_unknown
+		x = 67
+		y = 31
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_preparethewinteruniforms  }
+	}
+
+	#Reorganize Generalplan Ost
+	focus = {
+		id = GER_reorganize_generalplan_ost
+		icon = GFX_goal_unknown
+		x = 69
+		y = 31
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_preparethewinteruniforms  }
+	}
+
+	#Mobilization Planning
+	focus = {
+		id = GER_mobilization_planning
+		icon = GFX_goal_unknown
+		x = 71
+		y = 31
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_preparethewinteruniforms  }
+	}
+
+	#Create the Ostlandverwaltung
+	focus = {
+		id = GER_create_the_ostlandverwaltung
+		icon = GFX_goal_unknown
+		x = 59
+		y = 32
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_moskau_exhibition  }
+	}
+
+	#Full out Strategic Bombing
+	focus = {
+		id = GER_full_out_strategic_bombing
+		icon = GFX_goal_unknown
+		x = 61
+		y = 32
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_russlandasitlivesandfights  }
+	}
+
+	#The Helsinki Accords
+	focus = {
+		id = GER_the_helsinki_accords
+		icon = GFX_goal_unknown
+		x = 63
+		y = 32
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_drangnachosten  }
+	}
+
+	#Combat Russkis Scorch Tactics
+	focus = {
+		id = GER_combat_russkis_scorch_tactics
+		icon = GFX_goal_unknown
+		x = 65
+		y = 32
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_winter_defensive_operations  }
+	}
+
+	#Captured Factories
+	focus = {
+		id = GER_captured_factories
+		icon = GFX_goal_unknown
+		x = 67
+		y = 32
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_lacking_key_resources  }
+	}
+
+	#Führer Directive No. 21
+	focus = {
+		id = GER_fuhrerdirectiveno21
+		icon = GFX_goal_unknown
+		x = 69
+		y = 32
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_reorganize_generalplan_ost  }
+	}
+
+	#Eastern Collaboration
+	focus = {
+		id = GER_eastern_collaboration
+		icon = GFX_goal_unknown
+		x = 71
+		y = 32
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_mobilization_planning  }
+	}
+
+	#The Grand Finale
+	focus = {
+		id = GER_the_grand_finale
+		icon = GFX_goal_unknown
+		x = 61
+		y = 33
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_full_out_strategic_bombing  }
+	}
+
+	#Führer Directive No. 45
+	focus = {
+		id = GER_fuhrerdirectiveno45
+		icon = GFX_goal_unknown
+		x = 69
+		y = 33
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_fuhrerdirectiveno21  }
+	}
+
+	#Einsatzgruppen K
+	focus = {
+		id = GER_einsatzgruppen_k
+		icon = GFX_goal_unknown
+		x = 60
+		y = 34
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_create_the_ostlandverwaltung  }
+	}
+
+	#Treaty of Berlin
+	focus = {
+		id = GER_treaty_of_berlin
+		icon = GFX_goal_unknown
+		x = 62
+		y = 34
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_helsinki_accords  }
+	}
+
+	#Bring Hope to the Homefront
+	focus = {
+		id = GER_bring_hope_to_the_homefront
+		icon = GFX_goal_unknown
+		x = 68
+		y = 34
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_captured_factories  }
+	}
+
+	#An Untouchable Axis
+	focus = {
+		id = GER_an_untouchable_axis
+		icon = GFX_goal_unknown
+		x = 70
+		y = 34
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_eastern_collaboration  }
+	}
+
+	#Tobolsk armistice
+	focus = {
+		id = GER_tobolsk_armistice
+		icon = GFX_goal_unknown
+		x = 61
+		y = 35
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_treaty_of_berlin  } prerequisite = { focus = GER_einsatzgruppen_k  }
+	}
+
+	#Looking West
+	focus = {
+		id = GER_looking_west
+		icon = GFX_goal_unknown
+		x = 61
+		y = 36
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_tobolsk_armistice  }
+	}
+
+	#Total War
+	focus = {
+		id = GER_total_war
+		icon = GFX_goal_unknown
+		x = 69
+		y = 35
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_an_untouchable_axis  } prerequisite = { focus = GER_bring_hope_to_the_homefront  }
+	}
+
+	#For the Fatherland!
+	focus = {
+		id = GER_forthefatherland
+		icon = GFX_goal_unknown
+		x = 69
+		y = 36
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_total_war  }
+	}
+
+	#Harsh Measures
+	focus = {
+		id = GER_harsh_measures
+		icon = GFX_goal_unknown
+		x = 65
+		y = 35
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Total Economic Industrialization
+	focus = {
+		id = GER_total_economic_industrialization
+		icon = GFX_goal_unknown
+		x = 65
+		y = 36
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_harsh_measures  }
+	}
+
+	#Draw up Zitadelle
+	focus = {
+		id = GER_draw_up_zitadelle
+		icon = GFX_goal_unknown
+		x = 65
+		y = 37
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_total_economic_industrialization  }
+	}
+
+	#Rush preparation
+	focus = {
+		id = GER_rush_preparation
+		icon = GFX_goal_unknown
+		x = 64
+		y = 38
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_draw_up_zitadelle  }
+	}
+
+	#Paranoid Leaders
+	focus = {
+		id = GER_paranoid_leaders
+		icon = GFX_goal_unknown
+		x = 66
+		y = 38
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_draw_up_zitadelle  }
+		mutually_exclusive = { focus = GER_rush_preparation  }
+	}
+
+	#The Russian Strangle
+	focus = {
+		id = GER_the_russian_strangle
+		icon = GFX_goal_unknown
+		x = 65
+		y = 39
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_rush_preparation  } prerequisite = { focus = GER_paranoid_leaders  }
+	}
+
+	#Desperate Deployments
+	focus = {
+		id = GER_desperate_deployments
+		icon = GFX_goal_unknown
+		x = 65
+		y = 40
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GER_the_russian_strangle  }
+	}
+
+	#Meine Ehre heißt Treue
+	focus = {
+		id = GER_meineehreheissttreue
+		icon = GFX_goal_unknown
+		x = 64
+		y = 41
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GER_desperate_deployments  }
+		mutually_exclusive = { focus = GER_mobilizing_the_home_front  }
+	}
+
+	#Mobilizing the Home Front
+	focus = {
+		id = GER_mobilizing_the_home_front
+		icon = GFX_goal_unknown
+		x = 66
+		y = 41
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_desperate_deployments  }
+	}
+
+	#One final Call
+	focus = {
+		id = GER_one_final_call
+		icon = GFX_goal_unknown
+		x = 65
+		y = 42
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_meineehreheissttreue  } prerequisite = { focus = GER_mobilizing_the_home_front  }
+	}
+
+	#Endsieg
+	focus = {
+		id = GER_endsieg
+		icon = GFX_goal_unknown
+		x = 65
+		y = 43
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_one_final_call  }
+	}
+    
+	#Göring's way
+	focus = {
+		id = GER_goringsway
+		icon = GFX_goal_unknown
+		x = 40
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = GER_march_into_the_rhineland  }
+	}
+
+	#Taking office
+
+	focus = {
+		id = GER_takingoffice
+		icon = GFX_goal_unknown
+		x = 40
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_goringsway  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#The Georing Estate
+
+	focus = {
+		id = GER_thegeoringestate
+		icon = GFX_goal_unknown
+		x = 42
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_takingoffice  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#The art of war and the art of art
+
+	focus = {
+		id = GER_theartofwarandtheartofart
+		icon = GFX_goal_unknown
+		x = 42
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_thegeoringestate  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Georing Meuseum of Arts
+
+	focus = {
+		id = GER_georingmeuseumofarts
+		icon = GFX_goal_unknown
+		x = 41
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_theartofwarandtheartofart  }
+		mutually_exclusive = { focus = GER_koningsbergnationalpark  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Koningsberg National Park
+
+	focus = {
+		id = GER_koningsbergnationalpark
+		icon = GFX_goal_unknown
+		x = 43
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_theartofwarandtheartofart  }
+		mutually_exclusive = { focus = GER_georingmeuseumofarts  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#The Iron Knight
+
+	focus = {
+		id = GER_theironknight
+		icon = GFX_goal_unknown
+		x = 42
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = GER_koningsbergnationalpark  } prerequisite = { } prerequisite = { focus = GER_georingmeuseumofarts  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Head of the Luftwaffe
+
+	focus = {
+		id = GER_headoftheluftwaffe
+		icon = GFX_goal_unknown
+		x = 36
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_takingoffice  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#"We will go down in history either as the world's greatest statesmen or its worst villains"
+
+	focus = {
+		id = GER_wewillgodowninhistoryeitherastheworldsgreateststatesmenoritsworstvillains
+		icon = GFX_goal_unknown
+		x = 36
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_headoftheluftwaffe  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Full Luftwaffe priority!
+
+	focus = {
+		id = GER_fullluftwaffepriority
+		icon = GFX_goal_unknown
+		x = 36
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_wewillgodowninhistoryeitherastheworldsgreateststatesmenoritsworstvillains  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Structural Reorientation
+
+	focus = {
+		id = GER_structuralreorientation
+		icon = GFX_goal_unknown
+		x = 36
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fullluftwaffepriority  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Increase Luftwaffe Field-Divisions
+
+	focus = {
+		id = GER_increaseluftwaffefielddivisions
+		icon = GFX_goal_unknown
+		x = 36
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_structuralreorientation  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#An army with fashion
+
+	focus = {
+		id = GER_anarmywithfashion
+		icon = GFX_goal_unknown
+		x = 36
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_increaseluftwaffefielddivisions  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Weisung der Luftwaffe
+
+	focus = {
+		id = GER_weisungderluftwaffe
+		icon = GFX_goal_unknown
+		x = 36
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anarmywithfashion  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Retake the Gestapo
+
+	focus = {
+		id = GER_retakethegestapo
+		icon = GFX_goal_unknown
+		x = 34
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_weisungderluftwaffe  }
+		mutually_exclusive = { focus = GER_absorbtheokw  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Absorb the OKW
+
+	focus = {
+		id = GER_absorbtheokw
+		icon = GFX_goal_unknown
+		x = 38
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_weisungderluftwaffe  }
+		mutually_exclusive = { focus = GER_retakethegestapo  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Accumulate funds for the Luftwaffe
+
+	focus = {
+		id = GER_accumulatefundsfortheluftwaffe
+		icon = GFX_goal_unknown
+		x = 36
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = GER_retakethegestapo  } prerequisite = { } prerequisite = { focus = GER_absorbtheokw  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Research new fighter models
+
+	focus = {
+		id = GER_researchnewfightermodels
+		icon = GFX_goal_unknown
+		x = 36
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_accumulatefundsfortheluftwaffe  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Messerschmit Factories
+
+	focus = {
+		id = GER_messerschmitfactories
+		icon = GFX_goal_unknown
+		x = 36
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_researchnewfightermodels  }
+		mutually_exclusive = { focus = GER_heinkelag  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Heinkel AG
+
+	focus = {
+		id = GER_heinkelag
+		icon = GFX_goal_unknown
+		x = 38
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_researchnewfightermodels  }
+		mutually_exclusive = { focus = GER_messerschmitfactories  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Massive Plane build up
+
+	focus = {
+		id = GER_massiveplanebuildup
+		icon = GFX_goal_unknown
+		x = 37
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = GER_messerschmitfactories  } prerequisite = { } prerequisite = { focus = GER_heinkelag  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Finalize the program
+
+	focus = {
+		id = GER_finalizetheprogram
+		icon = GFX_goal_unknown
+		x = 42
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_massiveplanebuildup  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#German air supremacy
+
+	focus = {
+		id = GER_germanairsupremacy
+		icon = GFX_goal_unknown
+		x = 44
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_finalizetheprogram  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Consolidate the Nazi party
+
+	focus = {
+		id = GER_consolidatethenaziparty
+		icon = GFX_goal_unknown
+		x = 44
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_germanairsupremacy  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#advertise welfare benefits
+
+	focus = {
+		id = GER_advertisewelfarebenefits
+		icon = GFX_goal_unknown
+		x = 43
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_consolidatethenaziparty  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Improve the social state
+
+	focus = {
+		id = GER_improvethesocialstate
+		icon = GFX_goal_unknown
+		x = 45
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_consolidatethenaziparty  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Expand the propaganda office
+
+	focus = {
+		id = GER_expandthepropagandaoffice
+		icon = GFX_goal_unknown
+		x = 44
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = GER_advertisewelfarebenefits  } prerequisite = { } prerequisite = { focus = GER_improvethesocialstate  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Geobels gives a speech
+
+	focus = {
+		id = GER_geobelsgivesaspeech
+		icon = GFX_goal_unknown
+		x = 42
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_expandthepropagandaoffice  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Martin Bormann's speech
+
+	focus = {
+		id = GER_martinbormannsspeech
+		icon = GFX_goal_unknown
+		x = 44
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_expandthepropagandaoffice  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Goring's heinkel factory speech
+
+	focus = {
+		id = GER_goringsheinkelfactoryspeech
+		icon = GFX_goal_unknown
+		x = 46
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_expandthepropagandaoffice  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Award our heroes medals
+
+	focus = {
+		id = GER_awardourheroesmedals
+		icon = GFX_goal_unknown
+		x = 44
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = GER_geobelsgivesaspeech  } prerequisite = { } prerequisite = { focus = GER_martinbormannsspeech  } prerequisite = { } prerequisite = { focus = GER_goringsheinkelfactoryspeech  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Goring visits kummesldorf
+
+	focus = {
+		id = GER_goringvisitskummesldorf
+		icon = GFX_goal_unknown
+		x = 40
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_germanairsupremacy  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#New experimental designs
+	focus = {
+		id = GER_new_experimental_designs
+		icon = GFX_goal_unknown
+		x = 40
+		y = 22
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GER_goringvisitskummesldorf  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#improve the guns
+
+	focus = {
+		id = GER_improvetheguns
+		icon = GFX_goal_unknown
+		x = 39
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_new_experimental_designs  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Improvised rocket centers
+
+	focus = {
+		id = GER_improvisedrocketcenters
+		icon = GFX_goal_unknown
+		x = 39
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_improvetheguns  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Goring the Gate crasher
+
+	focus = {
+		id = GER_goringthegatecrasher
+		icon = GFX_goal_unknown
+		x = 44
+		y = 27
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = GER_improvisedrocketcenters  } prerequisite = { } prerequisite = { focus = GER_awardourheroesmedals  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Fund the FLAK project
+
+	focus = {
+		id = GER_fundtheflakproject
+		icon = GFX_goal_unknown
+		x = 37
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_goringvisitskummesldorf  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Securing our skies
+
+	focus = {
+		id = GER_securingourskies
+		icon = GFX_goal_unknown
+		x = 36
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fundtheflakproject  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#AA Expansion
+
+	focus = {
+		id = GER_aaexpansion
+		icon = GFX_goal_unknown
+		x = 36
+		y = 24
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_securingourskies  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#More AA
+
+	focus = {
+		id = GER_moreaa
+		icon = GFX_goal_unknown
+		x = 36
+		y = 25
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_aaexpansion  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Panzer research
+
+	focus = {
+		id = GER_panzerresearch
+		icon = GFX_goal_unknown
+		x = 33
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_goringvisitskummesldorf  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#eine Pilotenwelt
+
+	focus = {
+		id = GER_einepilotenwelt
+		icon = GFX_goal_unknown
+		x = 41
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fullluftwaffepriority  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Institute the Munich Laws
+
+	focus = {
+		id = GER_institutethemunichlaws
+		icon = GFX_goal_unknown
+		x = 41
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_einepilotenwelt  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Fund the ministers
+
+	focus = {
+		id = GER_fundtheministers
+		icon = GFX_goal_unknown
+		x = 42
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_institutethemunichlaws  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Increase the deportation of Jews
+
+	focus = {
+		id = GER_increasethedeportationofjews
+		icon = GFX_goal_unknown
+		x = 38
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_institutethemunichlaws  }
+		mutually_exclusive = { focus = GER_createlearninginstitutesforthelessfortunate  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Create learning institutes for the less fortunate
+
+	focus = {
+		id = GER_createlearninginstitutesforthelessfortunate
+		icon = GFX_goal_unknown
+		x = 40
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_institutethemunichlaws  }
+		mutually_exclusive = { focus = GER_increasethedeportationofjews  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Speer's Proposal
+
+	focus = {
+		id = GER_speersproposal
+		icon = GFX_goal_unknown
+		x = 42
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fundtheministers  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Factories in the West
+
+	focus = {
+		id = GER_factoriesinthewest
+		icon = GFX_goal_unknown
+		x = 41
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_speersproposal  }
+		mutually_exclusive = { focus = GER_heereswaffenamtnachberlin  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Heereswaffenamt nach Berlin
+
+	focus = {
+		id = GER_heereswaffenamtnachberlin
+		icon = GFX_goal_unknown
+		x = 43
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_speersproposal  }
+		mutually_exclusive = { focus = GER_factoriesinthewest  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Nazi opera
+
+	focus = {
+		id = GER_naziopera
+		icon = GFX_goal_unknown
+		x = 42
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = GER_factoriesinthewest  } prerequisite = { } prerequisite = { focus = GER_heereswaffenamtnachberlin  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Pure Nationalism
+
+	focus = {
+		id = GER_purenationalism
+		icon = GFX_goal_unknown
+		x = 42
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_naziopera  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Nationalize Lufthansa
+
+	focus = {
+		id = GER_nationalizelufthansa
+		icon = GFX_goal_unknown
+		x = 29
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fullluftwaffepriority  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Advanced Air fields
+
+	focus = {
+		id = GER_advancedairfields
+		icon = GFX_goal_unknown
+		x = 28
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_nationalizelufthansa  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Luftwaffe Weekly drills
+
+	focus = {
+		id = GER_luftwaffeweeklydrills
+		icon = GFX_goal_unknown
+		x = 30
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_nationalizelufthansa  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#The Berlin airshows
+
+	focus = {
+		id = GER_theberlinairshows
+		icon = GFX_goal_unknown
+		x = 29
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = GER_advancedairfields  } prerequisite = { } prerequisite = { focus = GER_luftwaffeweeklydrills  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Air Regulations Law
+
+	focus = {
+		id = GER_airregulationslaw
+		icon = GFX_goal_unknown
+		x = 29
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_theberlinairshows  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Reputation of the first Jagdgeschwader
+
+	focus = {
+		id = GER_reputationofthefirstjagdgeschwader
+		icon = GFX_goal_unknown
+		x = 29
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_airregulationslaw  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Create the Richthofen Research Institute
+
+	focus = {
+		id = GER_createtherichthofenresearchinstitute
+		icon = GFX_goal_unknown
+		x = 29
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reputationofthefirstjagdgeschwader  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#A bold eagle and a bold wolf
+
+	focus = {
+		id = GER_aboldeagleandaboldwolf
+		icon = GFX_goal_unknown
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { OR = { focus = GER_thedonitzgoverment focus = GER_goringsway  } }
+		ai_will_do = { factor = 1 }
+	}
+
+	#An operative in the ARL
+
+	focus = {
+		id = GER_anoperativeinthearl
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_expandtheenigmaprogramm  }
+		ai_will_do = { factor = 1 }
+	}
+
+
+
+
+	#
+
+	
+
+}
